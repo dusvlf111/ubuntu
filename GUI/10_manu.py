@@ -42,38 +42,18 @@ menu_lang.add_radiobutton(label="C++")
 menu_lang.add_radiobutton(label="java")
 menu.add_cascade(label="File", menu=menu_lang )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 뷰메뉴
+ 
+menu_view = Menu(menu, tearoff=0)
+menu_view.add_checkbutton(label="Show Minimap")
+menu.add_cascade(label="View", menu=menu_view)
 
 
 
 root.config(menu=menu)
 
 
-
-
-
-
-
-
-
-
-
-
 #-------------------------------------------------------------------------------------------------
-
 
 
 def btncmd():
